@@ -1,1 +1,8 @@
-shows a specific figure
+
+<%=@figure.name%>
+<%@figure.landmarks.each do |landmark|%>
+  <h1><%=landmark.name%></h1>
+<%end%>
+<%@figure.titles.each do |title|%>
+  <h1><%=title.name%></h1>
+  <%end%>
